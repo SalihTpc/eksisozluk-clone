@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+body {
+  background-color: #eeeeee;
+}
+header {
+  background-color: #eeeeee;
+  border-top: 4px solid #81c14b;
+  border-bottom: 1px solid #a6a6a7;
+  width: 100%;
+  position: fixed;
+  box-sizing: border-box;
+}
+input {
+  padding-left: 0.5em;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid #81c14b;
+  font-size: 14px;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+.header_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 10vw;
+  padding: auto 300px;
+}
+img {
+  width: 129px;
+  height: auto;
+}
+#srch-down {
+  font-size: 12px;
+  position: relative;
+  left: -3.5rem;
+  top: 0.2rem;
+  color: #666;
+}
+#srch-down:hover {
+  color: #333;
+}
+.eksico-olay {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+#first_r ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#first_r li {
+  list-style: none;
+  margin-left: 10px;
+}
+#first_r ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+}
+#first_r ul li a:hover {
+  text-decoration: underline;
+}
+form {
+  display: flex;
+  position: relative;
+  left: -22%;
+}
+#first_r i {
+  margin-right: 10px;
+}
+#srch {
+  margin: 0;
+  padding: 2 10px;
+  width: 1rem;
+  height: 1rem;
+  fill: white;
+}
+.header_2 {
+  margin: 0vh 9vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 100%;
+}
+.header_2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_2 ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333333;
+  padding: 0 1.5rem;
+  font-size: 14px;
+  line-height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid rgba(255, 246, 34, 0);
+}
+.header_2 ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pena-logo {
+  width: 64px;
+  height: auto;
+  margin: 0 -1rem;
+  padding-bottom: 6px;
+}
+.eksi-seyler {
+  width: 90px;
+  height: auto;
+  margin: 0 -1rem;
+  padding-bottom: 6px;
+}
+#arama {
+  width: 338px;
+  height: 29px;
+}
+#buttons {
+  border-radius: 0 5px 5px 0;
+  border: 0 none;
+  background-color: #81c14b;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#buttons:hover {
+  cursor: pointer;
+}
+.header_2 ul li a:hover {
+  color: #81c14b;
+  border-bottom: 4px solid #81c14b;
+}
+.main {
+  position: fixed;
+  top: 121px;
+  margin-bottom: 0;
+  bottom: 0;
+  display: flex;
+}
+.leftbar {
+  margin: 2vh 0 0 9vw;
+  min-width: 245px;
+  padding-right: 10px;
+  overflow: auto;
+}
+.leftbar li {
+  list-style: none;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.leftbar li:hover {
+  background-color: #e0e0e0;
+}
+.leftbar li a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 23px;
+  line-height: 23px;
+  color: #333;
+  max-width: 85%;
+}
+.baslik {
+  display: flex;
+  align-items: center;
+}
+h2 {
+  color: #666666;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 0.8rem;
+}
+h2 a {
+  color: #666666;
+  font-size: 0.6rem;
+}
+.leftbar::-webkit-scrollbar-thumb {
+  background-color: #b6b2b2;
+  box-shadow: inset 1px 1px 0 rgb(0 0 0 / 10%), inset 0 -1px 0 rgb(0 0 0 / 7%);
+  border-radius: 4px;
+}
+.leftbar::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+.leftbar::-webkit-scrollbar {
+  width: 8px;
+}
+.leftbar::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+.container {
+  overflow: auto;
+}
+.content {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.content-body {
+  width: 57%;
+  height: auto;
+  margin: 3vh 3vh 3vh 4vh;
+}
+.content-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.7rem 1rem;
+}
+h1 {
+  margin-bottom: 0.7rem;
+}
+h1 a {
+  color: #388e3c;
+  text-decoration: none;
+  font-size: 22px;
+}
+.content-footer a:hover {
+  color: #388e3c;
+  text-decoration: underline;
+}
+.content-footer a {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+.content p {
+  color: #666;
+  line-height: 24px;
+}
+.content-footer-left a {
+  padding-right: 0.6rem;
+  color: #b6b2b2;
+  font-size: 13px;
+}
+.content-footer-right a {
+  padding-left: 0.6rem;
+  font-size: 12px;
+}
+#yesil,
+.nerdesin {
+  color: #81c14b;
+  font-size: 14px;
+}
+.right-side {
+  margin-top: 2rem;
+  width: 27%;
+  font-family: "Open Sans", sans-serif;
+}
+.right-side img {
+  width: 110px;
+  height: auto;
+  position: relative;
+  top: 2px;
+}
+.cells {
+  border-top: 5px solid #53c7e0;
+}
+.cell {
+  display: flex;
+  border-bottom: 1px solid #b6b2b2;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.cell-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.cell-header-l,
+.cell-header-r {
+  display: flex;
+  align-items: baseline;
+}
+.mavidamla {
+  color: #53c7e0;
+  height: 16.8px;
+  width: auto;
+  padding-right: 5px;
+}
+a {
+  text-decoration: none;
+}
+#para {
+  line-height: 3px;
+}
+.cell-left p a {
+  font-size: 12px;
+  color: #333;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.cell-left p a:hover {
+  text-decoration: underline #333;
+}
+.cell-header-l a {
+  color: #999;
+}
+.cell-header-l h3 {
+  font-weight: 400;
+  font-size: 14px;
+}
+.cell-header-l h3 a:hover {
+  text-decoration: underline #999;
+}
+.gozluk {
+  padding-right: 5px;
+  font-size: 10px;
+  color: #999;
+}
+.click-number {
+  font-size: 10px;
+  color: #999;
+}
+.cell-left {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  width: 86%;
+  margin-left: 4vh;
+  padding: 12px 0 12px 5px;
+  border-top: 1px solid #999;
+}
+footer ul {
+  display: flex;
+}
+footer a {
+  font-size: 14px;
+  padding-right: 16px;
+  color: #388e3c;
+}
+footer ul li {
+  list-style: none;
+}

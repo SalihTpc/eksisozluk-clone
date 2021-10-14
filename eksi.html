@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ekşi sözlük - kutsal bilgi kaynağı</title>
+    <link rel="shortcut icon" href="https://ekstat.com/img/favicon-32x32.png" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <link rel="stylesheet" href="eksi.css" />
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="eksico-events-tracked" viewBox="0 0 512 512">
+        <path
+          d="m476 296l-159 0c-5 0-7-2-10-4l-27-42-22 42c-2 2-7 4-12 4l-210 0c-5 0-13-4-13-12 0-7 5-12 13-12l203 0 29-49c3-5 8-7 10-7 5 0 7 2 10 4l34 52 154 0c8 0 13 5 13 12 0 8-5 12-13 12z"
+        />
+      </symbol>
+      <symbol id="eksico-drop" viewBox="0 0 512 512">
+        <path d="m256 495c-96 0-171-75-171-171 0-92 171-307 171-307 0 0 171 215 171 307 0 92-75 171-171 171z" />
+      </symbol>
+      <symbol id="eksico-search" viewBox="0 0 512 512">
+        <path d="m507 507c-2 3-6 5-10 5-4 0-8-2-11-5l-143-142c-74 63-182 66-259 7-78-59-104-164-63-252 41-88 138-136 233-115 95 21 162 106 162 203 0 50-18 98-51 135l142 143c6 6 6 15 0 21z m-123-299c0-97-79-176-176-176-97 0-176 79-176 176 0 97 79 176 176 176 97 0 176-79 176-176z" />
+      </symbol>
+    </svg>
+    <header>
+      <div class="header_1">
+        <div id="logo"><img src="./eksisozluk_logo.png" alt="" oncontextmenu="return false"/></div>
+        <div class="form">
+          <form action="">
+            <input
+              type="text"
+              name="arama"
+              id="arama"
+              placeholder="başlık, #entry, @yazar"
+            />
+            <button id="buttons" type="submit" name="search" title="Arama">
+              <svg class="eksico" id="srch"><use xlink:href="#eksico-search"></use></svg>
+            </button>
+            <a href="#">
+              <i id="srch-down" class="fas fa-caret-down"></i>
+            </a>
+          </form>
+        </div>
+        <div id="first_r">
+          <ul>
+            <li title="altınelbiseliadam">
+              <a href="#"><i class="far fa-user"></i>ben</a>
+            </li>
+            <li title="mesajın var yeşili">
+              <a href="#"><i class="far fa-comment-alt"></i>mesaj</a>
+            </li>
+            <li title="olaylar olaylar">
+              <a href="#">
+                <svg class="eksico-olay">
+                  <use xlink:href="#eksico-events-tracked"></use>
+                </svg>
+                olay
+              </a>
+            </li>
+            <li title="seçenekler">
+              <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header_2">
+        <ul>
+          <li title="en son girilenler"><a href="#">bugün</a></li>
+          <li title="dünyamızda neler olup bitiyor"><a href="#">gündem</a></li>
+          <li title="dünün en sevilen entry'leri"><a href="#">debe</a></li>
+          <li title="sorunlar veya sorunsallar"><a href="#">sorunsallar</a></li>
+          <li title="takip ettiklerimden gelenler"><a href="#">takip</a></li>
+          <li title="senden sonra girilenler"><a href="#">son</a></li>
+          <li title="kenarda duran entry'ler"><a href="#">kenar</a></li>
+          <li title="çaylaklardan başlıklar"><a href="#">çaylaklar</a></li>
+          <li title="futbol, basketbol, tenis ve curling gibi atasporları"><a href="#">#spor</a></li>
+          <li title="sevgili, eski sevgili ve hoşlanılan kız"><a href="#">#ilişkiler</a></li>
+          <li title="partiler, politikacılar, terör, savaş, kan ve korku"><a href="#">#siyaset</a></li>
+          <li title="kanallar">
+            <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="pena-logo"
+                src="https://eksisozluk.com/content/img/new-logos/pena-text-logo@2x.png"
+                alt="pena"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="eksi-seyler"
+                src="https://eksisozluk.com/content/img/new-logos/eksiseyler-text-logo@2x.png"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="main">
+      <div class="leftbar">
+        <div class="baslik">
+          <h2>
+            gündem <a href="#"><i title="21 başlık" class="fas fa-cog"></i></a>
+          </h2>
+        </div>
+        <ul>
+          <li><a href="#">valentino rossi</a><a href="#">46</a></li>
+          <li><a href="#">oğlunun adını fazlı koyan elektrik mühendisi</a><a href="#">85</a></li>
+          <li><a href="#">önce vatan markalı nohutun meksika'dan gelmesi</a><a href="#">56</a></li>
+          <li><a href="#">dünyanın kendi etrafında dönüş sebebi</a><a href="#">195</a></li>
+          <li><a href="#">zengin insanların mutsuz olduğunu düşünen fakir</a><a href="#">112</a></li>
+          <li><a href="#">12 ekim 2021 tügva torpil listesi</a><a href="#">130</a></li>
+          <li><a href="#">nevşin mengü</a><a href="#">21</a></li>
+          <li>
+            <a href="#">pilav yapma makinasıyla evlenen adamın boşanması</a><a href="#">78</a>
+          </li>
+          <li>
+            <a href="#">sana vurana sen de vur diyen ebeveyn</a
+            ><a href="#">12</a>
+          </li>
+          <li>
+            <a href="#">kadın sanılıp dm atılan yazarlar veritabanı</a
+            ><a href="#">18</a>
+          </li>
+          <li>
+            <a href="#">istanbul'un trafik sorununun kesin çözümü</a
+            ><a href="#">45</a>
+          </li>
+          <li>
+            <a href="#">uzman doktor şükran taştan sakarya</a><a href="#">123</a>
+          </li>
+          <li>
+            <a href="#">izlenen en iyi oyunculuk performansı</a
+            ><a href="#">74</a>
+          </li>
+          <li>
+            <a href="#">insanı hayvandan ayıran şeyler</a><a href="#">89</a>
+          </li>
+          <li>
+            <a href="#">sjw'liğin ayarının kaçması</a><a href="#">13</a></li>
+          </li>
+          <li>
+            <a href="#">çok pahalı olmasa hemen bugün alınacaklar listesi</a
+            ><a href="#">21</a>
+          </li>
+          <li>
+            <a href="#">eskiden herkesin üstünde olan kıyafet</a
+            ><a href="#">29</a>
+          </li>
+          <li><a href="#">ankara trafiği</a><a href="#">420</a></li>
+          <li><a href="#">squid game</a><a href="#">89</a></li>
+          <li>
+            <a href="#">ben evlenince kirada oturamam</a><a href="#">85</a>
+          </li>
+          <li>
+            <a href="#">12 ekim 2021 dış güçlerin sahneye çıkması</a
+            ><a href="#">85</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="content">
+          <div class="content-body">
+          <div class="entry">
+            <h1>
+              <a href="#">filtre kahvenin yanında iyi giden şeyler</a>
+            </h1>
+            <p>
+              sayfalarca öneri yazılmış, bu önerilerin en uygun nasıl        gerçekleştirileceği yazılmamış.
+
+              tosla uygulamasına girerek tosla dijital kart’ı edinerek birçok zincir markette geçerli tosback fırsatlarından hızlıca yararlan, filtre kahvenin yanına en çok yakıştırdığın şeyin üstüne bir de 20 tl tosback al, keyfin katlansın :)
+            </p>
+            <div class="content-footer">
+              <div class="content-footer-left">
+                <a href="#"><i class="fab fa-facebook-f" title="facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter" title="twitter"></i></a>
+                <a href="#"><i class="fas fa-chevron-up" title="şükela!"></i></a>
+                <a href="#"><i class="fas fa-chevron-down" title="çok kötü"></i></a>
+                <a id="eksidamla" title="favorilere ekle" href="#">
+                  <i class="fas fa-tint"></i>
+                </a>
+                <a href="#" >170</a>
+              </div>
+              <div class="content-footer-right">
+                <a href="#">12.10.2021 11:58</a>
+                <a id="yesil" href="#">toslaapp</a>
+                <a href="#">
+                    <i class="fas fa-ellipsis-h nerdesin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="entry">
+            <h1>
+              <a href="#">superman'ın tek kolunu önde tutarak uçması</a>
+            </h1>
+            <p>filmlerde pek yansıtılmıyor ama çizgi romanlara    bakarsanız superman aslında uçmuyor, zıplıyor. geldiği  gezegenin yerçekimine göre dünyanın yerçekimi kuvvetli olmadığı için uzun mesafeleri bu şekilde kat ediyor, hatta gücünün kaynağı da budur. buna benzer bir düşünce dragonball z animesinde de var. g kuvveti falan...
+
+              daha büyük mesafeleri zıplamak için de bir noktaya ulaşmak istercesine kolunu kullanıyor. filmlerde, bu pek yansıtılmayınca da çok saçma duruyor.
+            </p>
+            <div class="content-footer">
+              <div class="content-footer-left">
+                <a href="#"><i class="fab fa-facebook-f" title="facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter" title="twitter"></i></a>
+                <a href="#"><i class="fas fa-chevron-up" title="şükela!"></i></a>
+                <a href="#"><i class="fas fa-chevron-down" title="çok kötü"></i></a>
+                <a id="eksidamla" title="favorilere ekle" href="#">
+                  <i class="fas fa-tint"></i>
+                </a>
+                <a href="#">251</a>
+              </div>
+              <div class="content-footer-right">
+                <a href="#">31.05.2021 21:44</a>
+                <a href="#" id="yesil">shiftetelli</a>
+                <a href="#" >
+                    <i class="fas fa-ellipsis-h nerdesin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="entry">
+            <h1>
+              <a href="#">arabayı nereye park ettiğini hatırlayamamak</a>
+            </h1>
+            <p>
+              değil arabayı nereye park ettiğimi, işe arabayla geldiğimi unutup, vapurla dönmüşlüğüm var!! 
+            </p>
+            <div class="content-footer">
+              <div class="content-footer-left">
+                <a href="#"><i class="fab fa-facebook-f" title="facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter" title="twitter"></i></a>
+                <a href="#"><i class="fas fa-chevron-up" title="şükela!"></i></a>
+                <a href="#"><i class="fas fa-chevron-down" title="çok kötü"></i></a>
+                <a id="eksidamla" title="favorilere ekle" href="#">
+                  <i class="fas fa-tint"></i>
+                </a>
+                <a href="#">406</a>
+              </div>
+              <div class="content-footer-right">
+                <a href="#">16.11.2016 09:19</a>
+                <a href="#" id="yesil"> kucukprensinkedisi</a>
+                <a href="#" >
+                    <i class="fas fa-ellipsis-h nerdesin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="entry">
+            <h1>
+              <a href="#">bir başkadır</a>
+            </h1>
+            <p>
+              zengin ve fakiri havyar yiyenler ve gecekonduda oturanlar şeklinde iki kümede inceleyen şimdiye kadarki türk dizilerinden farkı olmayan dizi. dünyadan haberi olmayan, diğer meryem'lerle bir araya gelip ülkenin önünü tıkayan milyonları oluşturduğunun da farkında olmayan meryem'i sevimli ve masum gösterme çabasını ucuz buldum. özellikle "takmış kızın tesettürüne" repliğini, dizinin kendi tavrını bu şekilde dillendirmesini çok ucuz buldum. robert mezunu peri empati yapamadığı için günah keçisi. fakat peri neden empatiyi hak etmiyor. meryem içine düşmekten korktuğumuz kuyunun temsili. meryem sadece robert mezunu peri'nin değil annesi, babaannesi kapalı olan şimdinin az çok okumuş kesiminin de kabusu. dizi empati yapma görevini peri'ye biçmiş. çünkü meryem'in hiçbir entelektüel sorumluluğu yok. meryem'ler durduğu yerde ülkenin geleceğini yok ederken peri'ye politik doğruculuk gereği meryem'lere karşı duyduğu antipatiyi törpülemek zorunda olduğu empoze ediliyor. tıpkı meryem'e en önemli ihtiyacının ve hakkının özgürce başını kapatmak olduğunun öğretilmesi gibi. meryem'i allayıp pullarken peri'yi boklamak yetmez ama evetçi popülizm. 
+            </p>
+            <div class="content-footer">
+              <div class="content-footer-left">
+                <a href="#"><i class="fab fa-facebook-f" title="facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter" title="twitter"></i></a>
+                <a href="#"><i class="fas fa-chevron-up" title="şükela!"></i></a>
+                <a href="#"><i class="fas fa-chevron-down" title="çok kötü"></i></a>
+                <a id="eksidamla" title="favorilere ekle" href="#">
+                  <i class="fas fa-tint"></i>
+                </a>
+                <a href="#">434</a>
+              </div>
+              <div class="content-footer-right">
+                <a href="#">15.11.2020 14:20 ~ 17.11.2020 02:11</a>
+                <a href="#" id="yesil">rat in a cage</a>
+                <a href="#">
+                    <i class="fas fa-ellipsis-h nerdesin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="entry">
+            <h1>
+              <a href="#">7000 tl yüzünden vurulacak olmak</a>
+            </h1>
+            <p>
+              yardıma koşmamız gerekirken hakkında şakalar komiklikler yapılan konu.
+
+              "hemen hesap numarası gönder kardeşim, candan önemli mi" diyerek borcunu kapatmak isterdim ama bütün birikimimi yarın bulgaristan'dan gelecek sevgilime gönderdim :( 
+            </p>
+            <div class="content-footer">
+              <div class="content-footer-left">
+                <a href="#"><i class="fab fa-facebook-f" title="facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter" title="twitter"></i></a>
+                <a href="#"><i class="fas fa-chevron-up" title="şükela!"></i></a>
+                <a href="#"><i class="fas fa-chevron-down" title="çok kötü"></i></a>
+                <a id="eksidamla" title="favorilere ekle" href="#">
+                  <i class="fas fa-tint"></i>
+                </a>
+                <a href="#">261</a>
+              </div>
+              <div class="content-footer-right">
+                <a href="#">05.10.2016 03:30</a>
+                <a href="#" id="yesil">camdaki sinek</a>
+                <a href="#">
+                    <i class="fas fa-ellipsis-h nerdesin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="entry">
+            <h1>
+              <a href="#">avrupalı çocuk ve türk çocuğu arasındaki farklar</a>
+            </h1>
+            <p>
+              6-7 yaşlarinda 1 türk 1 avrupali cocukla dixit denen oyunu oynuyoruz geçen ay tatil yöresinin birinde.
+
+              turk cocuk surekli hile yapiyor, bizi kandirmak icin blöf bile yapiyor, acayip numaralar çekiyor. tamam bizde de öküzlük var çok gülüyoruz vs
+
+              avrupali cocuk bi turlu anlayamiyor hile yapilmasini. biz her turda belki o da blöf yapmiştir diye oyunu ona göre oynuyoruz ama yok. cocuk her seferide dürüstçe oynuyor oyunu ve hep düşük puan aliyor tabi.
+
+              cocuk bi turlu hileye neden gerek duyuldugunu, neden hile yapmasi gerektigini anlayamadi la. hilenin mantigi anliyor ama neden bunu yaptigimizi anlamiyor.
+
+              adam 7 yaşinda alayimizdan ahlakli ve kaliteli bi insan cikti. 
+            </p>
+            <div class="content-footer">
+              <div class="content-footer-left">
+                <a href="#"><i class="fab fa-facebook-f" title="facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter" title="twitter"></i></a>
+                <a href="#"><i class="fas fa-chevron-up" title="şükela!"></i></a>
+                <a href="#"><i class="fas fa-chevron-down" title="çok kötü"></i></a>
+                <a id="eksidamla" title="favorilere ekle" href="#">
+                  <i class="fas fa-tint"></i>
+                </a>
+                <a href="#">513</a>
+              </div>
+              <div class="content-footer-right">
+                <a href="#">08.09.2016 10:06</a>
+                <a href="#" id="yesil">beeyore</a>
+                <a href="#">
+                    <i class="fas fa-ellipsis-h nerdesin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="entry">
+            <h1>
+              <a href="#">türkiye'de gereksiz yere pahalı olan şeyler</a>
+            </h1>
+            <p>
+              bana göre damacana su ve gsm bu şeylerin başını çeker.
+              suyu kaynağından alıp şişeliyorsunuz, şişenin depozitini alıyorsunuz, hani diyecem birçok işlemden geçiriliyor, o da yok. birçoğunun test sonuçları vasatın altında. neredeyse ham maddesi yurtdışından gelen, şişesi depozitsiz kola fiyatına satanlar var bunu.
+              hele gsmi anlamak mümkün değil. konuşsanda konuşmasanda o baz istasyonları bilgisayarlar vs hep faal zaten. belli bir aidatı anlarım ama konuşmayı ücretlendirmenin bir anlamı yok. şebekeler yetersiz kalır desen zaten kontrolsüzce her tarafı baz istasyonlarıyla donatmışsın belki yüzde 50 kapasiteyle bile çalışmıyorsun. 50-60tl fatura mı olur yani at alırız o paraya be. 
+            </p>
+            <div class="content-footer">
+              <div class="content-footer-left">
+                <a href="#"><i class="fab fa-facebook-f" title="facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter" title="twitter"></i></a>
+                <a href="#"><i class="fas fa-chevron-up" title="şükela!"></i></a>
+                <a href="#"><i class="fas fa-chevron-down" title="çok kötü"></i></a>
+                <a id="eksidamla" title="favorilere ekle" href="#">
+                  <i class="fas fa-tint"></i>
+                </a>
+                <a href="#">140</a>
+              </div>
+              <div class="content-footer-right">
+                <a href="#">26.03.2015 00:07</a>
+                <a href="#" id="yesil">vox veritas vita</a>
+                <a href="#">
+                    <i class="fas fa-ellipsis-h nerdesin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="right-side">
+          <div class="cells">
+            <div class="cell">
+              <div class="cell-left">
+                <div class="cell-header">
+                  <div class="cell-header-l">
+                    <a href="#"><i class="fas fa-tint mavidamla"></i></a>
+                    <h3><a href="#">MİMARİ</a></h3>
+                  </div>
+                  <div class="cell-header-r">
+                    <p><i class="fas fa-glasses gozluk"></i></p>
+                    <p class="click-number">13,9b</p>
+                  </div>
+                </div>
+                <p>
+                  <a id="parag" href="#">Sıfırdan Ev Düzeceklere İlaç Gibi Gelecek Dekorasyon Önerileri </a>
+                </p>
+              </div>
+              <div class="cell-right">
+                <a href="#"><img src="https://seyler.ekstat.com/img/230/O/OlC1TQOMYNB8rF8Q-637667108059951458.jpg" alt="mimari"></a>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell-left">
+                <div class="cell-header">
+                  <div class="cell-header-l">
+                    <a href="#">
+                      <i class="fas fa-tint mavidamla"></i></a>
+                    <h3><a href="#">İNTERNET</a></h3>
+                  </div>
+                  <div class="cell-header-r">
+                    <p><i class="fas fa-glasses gozluk"></i></p>
+                    <p class="click-number">5,5b</p>
+                  </div>
+                </div>
+                <p>
+                  <a href="#" id="para">Web Siteleri Clickbait Yöntemiyle Okurları Tuzağına Nasıl Düşürebiliyor?</a>
+                </p>
+              </div>
+              <div class="cell-right">
+                <a href="#"><img src="https://seyler.ekstat.com/img/230/G/GfSdT0yDvqPFbywA-637667134419751256.jpg" alt="internet"></a>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell-left">
+                <div class="cell-header">
+                  <div class="cell-header-l">
+                    <a href="#"><i class="fas fa-tint mavidamla"></i></a>
+                    <h3><a href="#">BASKETBOL</a></h3>
+                  </div>
+                  <div class="cell-header-r">
+                    <p><i class="fas fa-glasses gozluk"></i></p>
+                    <p class="click-number">4,9b</p>
+                  </div>
+                </div>
+                <p>
+                  <a href="#">Fenerbahçe Basketbolunun 2000'lerdeki Sessiz Efsanelerinden: Damir Mrsic</a>
+                </p>
+              </div>
+              <div class="cell-right">
+                <a href="#"><img src="https://seyler.ekstat.com/img/230/s/sB5eiqKlpwOPwh2B-637666957190231766.jpg" alt="basketbol"></a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <footer>
+          <ul>
+            <li><a href="#">iletişim</a></li>
+            <li><a href="#">şeffaflık raporu</a></li>
+            <li><a href="#">reklam</a></li>
+            <li><a href="#">kariyer</a></li>
+            <li><a href="#">kullanım koşulları</a></li>
+            <li><a href="#">gizlilik politikamız</a></li>
+            <li><a href="#">sss</a></li>
+            <li><a href="#">istatistikler</a></li>
+            <li><a href="#">modlog</a></li>
+            <li><a href="#">sub-etha</a></li>
+            <li><a href="#">instagram</a></li>
+            <li><a href="#">twitter</a></li>
+            <li><a href="#">facebook</a></li>
+          </ul>
+        </footer>
+      </div>
+      
+    </div>
+  </body>
+</html>
